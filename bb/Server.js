@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = 8000;
+const port = 8000;
 
 app.use(cors());
 app.use(express.json());
@@ -26,7 +26,7 @@ app.post('/cred', (req, res) => {
 });
 
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`listening on port ${PORT}`);
+app.listen(process.env.PORT || port, () => {
+    console.log(`listening on port ${port}`);
 });
 
