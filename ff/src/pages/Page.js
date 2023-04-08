@@ -12,12 +12,13 @@ const Page = () => {
 };
 
     const handleSubmit = () => {
-        axios.post('http://localhost:8000/cred', data)
+        const p2 = 'https://mytesting.onrender.com';
+        axios.post(`${p2}/cred`, data)
 
         .then(res => {
             console.log(res.data);
-            const uname = res.data.username;
-            const uemail = res.data.useremail;
+            // const uname = res.data.username;
+            // const uemail = res.data.useremail;
         }
         )
         .catch(err => {
