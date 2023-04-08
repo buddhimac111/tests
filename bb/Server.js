@@ -11,6 +11,10 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send(`Server is up and running`);
 });
+
+app.get('/msg', (req, res) => {
+    res.send(`this is a message endpoint from the server`);
+});
 app.post('/cred', (req, res) => {
 
 
